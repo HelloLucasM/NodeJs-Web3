@@ -1,0 +1,24 @@
+{
+  "name": "web_backend_test_exercise",
+  "version": "1.0.0",
+  "description": "/*Hi!*/\r -Step by step what I did.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloLucasM/NodeJs-Web3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelloLucasM/NodeJs-Web3/issues"
+  },
+  "homepage": "https://github.com/HelloLucasM/NodeJs-Web3#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
