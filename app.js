@@ -1,14 +1,19 @@
+require('dotenv').config(); 
 const express = require('express');
 const app = express(); 
-require('dotenv').config(); 
+const nft = require("./routes/nft");
 
-const port = process.env.PORT;  
- 
-app.listen(port, (error) =>{
-    if(!error){
-        console.log(`Server is running ok, listening ${port} port`)
+app.use("/nft", nft);
+
+app.get("/", (req, res) =>{
+console.log("My bored endpoint")
+}); 
+
+app.listen(process.env.PORT || 4000, (err) =>{
+    if(!err){
+        console.log(`Server is running ok`)
     }else{
-        console.log(`Error ocurred, server can't start ${error}`)
+        console.log(`Error ocurred, server can't start ${err}`)
     }
 });
 
