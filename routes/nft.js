@@ -1,5 +1,6 @@
-const { application } = require("express");
 const express = require("express");
+const _db = require('../config/db');  
+
 let router = express.Router(); 
 
 router
